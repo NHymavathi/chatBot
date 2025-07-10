@@ -9,14 +9,12 @@
   <div class="container">
     <h1>CHAT BOT</h1>
     <form method="POST" action="/predict">
-      <textarea name="question" placeholder="Type your question here..." required>{{ question if question else '' }}</textarea>
+      <textarea name="question" placeholder="Type your question here..." required></textarea>
       <button type="submit">Get Answer</button>
     </form>
-    {% if prediction %}
     <div class="result">
-      <strong>Predicted Answer:</strong> {{ prediction }}
+      <strong>Predicted Answer:</strong>
     </div>
-    {% endif %}
   </div>
 </body>
 </html>
